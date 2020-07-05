@@ -12,6 +12,13 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
+    <script>
+    if( !localStorage.hasOwnProperty("user_token") ){
+        window.location.replace("/login");
+    }
+
+    </script>
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -25,5 +32,7 @@
     <div id="app">
         <app-container></app-container>
     </div>
+
+
 </body>
 </html>

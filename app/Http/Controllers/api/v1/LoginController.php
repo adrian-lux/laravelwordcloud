@@ -18,6 +18,6 @@ class LoginController extends Controller
         }
 
         $accessToken = Auth::user()->createToken('authToken')->accessToken;
-        return response(['user'=>Auth::user(), 'access_tokn'=>$accessToken]);
+        return response(['user'=>Auth::user(), 'access_token'=>$accessToken]);
     }
 }
