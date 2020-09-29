@@ -27,7 +27,7 @@ const actions = {
                     response.data.access_token
                 )
 
-                window.location.replace("/home");
+                window.location.replace("/app");
             }
         })
         .catch((error)=>{

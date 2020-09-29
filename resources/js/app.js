@@ -8,8 +8,9 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
-import Vuetify from "../plugins/vuetify";
-import store from "./store";
+import Vuetify from "../plugins/vuetify"; // Vuetify
+import store from "./store"; // vuex
+import router from './router'; // vueRouter
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -32,5 +33,6 @@ Vue.component('login-form', require('./components/loginForm.vue').default);
 const app = new Vue({
     vuetify: Vuetify,
     store,
+    router,
     el: '#app'
 });
